@@ -8,12 +8,12 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #2F3645;
-    color: white;
 }
 
 h1 {
     margin: 0;
     font-size: 30px;
+    color: white;
 }
 
 h2 {
@@ -24,7 +24,7 @@ h2 {
 .container {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
     justify-content: center;
     background-color: hsl(221, 19%, 63%);
     color:#2F3645;
@@ -77,6 +77,10 @@ input {
 
 .calculated {
     background-color: hsl(221, 19%, 73%);
+}
+
+.calculated::placeholder {
+    color: #EEEDEB;
 }
 
 @media (min-width: 500px) {
