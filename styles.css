@@ -15,6 +15,7 @@ form {
     align-items: center;
     flex-direction: column;
     gap: 0px;
+    width: 95%;
 }
 
 h1 {
