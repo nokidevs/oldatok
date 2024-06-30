@@ -15,62 +15,65 @@
   <body>
     <h1>OLDATOK</h1>
     <!-- <h2>Kémia 7. osztály</h2> -->
-    <div class="container">
-      <div class="row">
-        <p>Kiinduló térfogat [liter]</p>
-        <input
-          type="number"
-          id="initialVolume"
-          class="req"
-          placeholder="Adjon meg egy számot!"
-        />
-      </div>
 
-      <div class="row">
-        <p>Kiinduló koncentráció [%]</p>
-        <input
-          type="number"
-          id="initialCon"
-          class="req"
-          placeholder="Adjon meg egy számot!"
-        />
-      </div>
+    <form action="javascript:void(0);" onsubmit="calculate()">
+      <div class="container">
+        <div class="row">
+          <p>Kiinduló térfogat [liter]</p>
+          <input
+            type="number"
+            id="initialVolume"
+            class="req"
+            placeholder="Adjon meg egy számot!"
+          />
+        </div>
 
-      <div class="row">
-        <p>Cél koncentráció [%]</p>
-        <input
-          type="number"
-          id="targetCon"
-          class="req"
-          placeholder="Adjon meg egy számot!"
-        />
-      </div>
+        <div class="row">
+          <p>Kiinduló koncentráció [%]</p>
+          <input
+            type="number"
+            id="initialCon"
+            class="req"
+            placeholder="Adjon meg egy számot!"
+          />
+        </div>
 
-      <div class="row">
-        <p id="label">Szükséges adalék [liter]</p>
-        <input
-          type="number"
-          id="reqWater"
-          class="calculated"
-          readonly
-          placeholder="Számított érték"
-        />
-      </div>
+        <div class="row">
+          <p>Cél koncentráció [%]</p>
+          <input
+            type="number"
+            id="targetCon"
+            class="req"
+            placeholder="Adjon meg egy számot!"
+          />
+        </div>
 
-      <div class="row">
-        <p>Végső térfogat [liter]</p>
-        <input
-          type="number"
-          id="finalVolume"
-          class="calculated"
-          readonly
-          placeholder="Számított érték"
-        />
-      </div>
+        <div class="row">
+          <p id="label">Szükséges adalék [liter]</p>
+          <input
+            type="number"
+            id="reqWater"
+            class="calculated"
+            readonly
+            placeholder="Számított érték"
+          />
+        </div>
 
-      <button id="calc" onclick="calculate()">Számítás</button>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-      <script src="index.js"></script>
-    </div>
+        <div class="row">
+          <p>Végső térfogat [liter]</p>
+          <input
+            type="number"
+            id="finalVolume"
+            class="calculated"
+            readonly
+            placeholder="Számított érték"
+          />
+        </div>
+
+        <button id="calc" type="submit">Számítás</button>
+      </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
