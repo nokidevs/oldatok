@@ -17,7 +17,7 @@ function calculate() {
         finalVolume.val(finalVolumeCalc.toFixed(2));
         $("#label").text("Szükséges higító anyag [liter]");
     } else if (initialCon < targetCon) {
-        let reqWaterCalc = initialVolume * (initialCon/100 - targetCon/100) / (targetCon /100);
+        let reqWaterCalc = (initialVolume * (targetCon / 100 - initialCon / 100)) / (1 - targetCon / 100);
         let finalVolumeCalc = parseFloat(reqWaterCalc) + parseFloat(initialVolume);
         reqWater.val(reqWaterCalc.toFixed(2));
         finalVolume.val(finalVolumeCalc.toFixed(2));
